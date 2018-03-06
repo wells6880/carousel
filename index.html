@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播效果</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="main">
+    <!--轮播图片-->
+    <div id="carousel">
+        <!--图片-->
+        <div class="pics">
+            <img class="carousel-img active" src="img/bg1.jpg" alt="图片1">
+            <img class="carousel-img" src="img/bg2.jpg" alt="图片2">
+            <img class="carousel-img" src="img/bg3.jpg" alt="图片3">
+        </div>
+        <!--上一张、下一张图片-->
+        <div class="carousel-arrow">
+            <img class="carousel-arrow-left" src="img/arrow.png" alt="left" id="next">
+            <img class="carousel-arrow-right" src="img/arrow.png" alt="right" id="prev">
+        </div>
+        <!--图片导航-->
+        <div class="carousel-icon">
+            <span class="active"></span><span></span><span></span>
+        </div>
+    </div>
+    <!--导航菜单-->
+    <nav class="nav-main">
+        <div class="main-item"><a href=""><span>手机、配件</span><i>&#xe665;</i></a></div>
+        <div class="main-item"><a href=""><span>电脑</span><i>&#xe665;</i></a></div>
+        <div class="main-item"><a href=""><span>家用电器</span><i>&#xe665;</i></a></div>
+        <div class="main-item"><a href=""><span>家具</span><i>&#xe665;</i></a></div>
+    </nav>
+    <!--子导航菜单-->
+    <nav class="nav-sub">
+        <div class="sub-item" style="display: none">
+            <h3>手机、配件</h3>
+            <div class="sub-item-sub">
+                <h4>手机通讯：</h4>
+                <a href="">手机</a><span>/</span>
+                <a href="">手机维修</a><span>/</span>
+                <a href="">以旧换新</a>
+            </div>
+            <div class="sub-item-sub">
+                <h4>手机配件：</h4>
+                <a href="">手机壳</a><span>/</span>
+                <a href="">手机存储卡</a><span>/</span>
+                <a href="">数据线</a><span>/</span>
+                <a href="">充电器</a><span>/</span>
+                <a href="">电池</a>
+            </div>
+            <div class="sub-item-sub">
+                <h4> 运营商：</h4>
+                <a href="">中国联通</a><span>/</span>
+                <a href="">中国移动</a><span>/</span>
+                <a href="">中国电信</a>
+            </div>
+            <div class="sub-item-sub">
+                <h4>智能设备：</h4>
+                <a href="">智能手环 </a><span>/</span>
+                <a href="">智能家居</a><span>/</span>
+                <a href="">智能手表</a><span>/</span>
+                <a href="">其他配件</a>
+            </div>
+            <div class="sub-item-sub">
+                <h4>娱乐：</h4>
+                <a href="">耳机</a><span>/</span>
+                <a href="">音响</a><span>/</span>
+                <a href="">收音机</a><span>/</span>
+                <a href="">麦克风</a>
+            </div>
+        </div>
+        <div class="sub-item" style="display: none">
+            <h3>电脑</h3>
+            <div class="sub-item-sub">
+                <h4>电脑：</h4>
+                <a href="">笔记本</a><span>/</span>
+                <a href="">平板</a><span>/</span>
+                <a href="">一体机</a>
+            </div>
+            <div class="sub-item-sub">
+                <h4>电脑配件：</h4>
+                <a href="">显示器</a><span>/</span>
+                <a href="">CPU</a><span>/</span>
+                <a href="">主板</a><span>/</span>
+                <a href="">硬盘</a><span>/</span>
+                <a href="">电源</a><span>/</span>
+                <a href="">显卡</a><span>/</span>
+                <a href="">其它配件</a>
+            </div>
+            <div class="sub-item-sub">
+                <h4>游戏设备：</h4>
+                <a href="">游戏机</a><span>/</span>
+                <a href="">耳机</a><span>/</span>
+                <a href="">游戏软件</a>
+            </div>
+            <div class="sub-item-sub">
+                <h4>网络产品：</h4>
+                <a href="">路由器</a><span>/</span>
+                <a href="">网络机顶盒</a><span>/</span>
+                <a href="">交换机</a><span>/</span>
+                <a href="">存储卡</a><span>/</span>
+                <a href="">网卡</a>
+            </div>
+            <div class="sub-item-sub">
+                <h4>外部产品：</h4>
+                <a href="">鼠标</a><span>/</span>
+                <a href="">键盘</a><span>/</span>
+                <a href="">U盘</a><span>/</span>
+                <a href="">移动硬盘</a><span>/</span>
+                <a href="">鼠标垫</a><span>/</span>
+                <a href="">电脑清洁</a>
+            </div>
+        </div>
+        <div class="sub-item" style="display: none">
+            <h3>家用电器</h3>
+            <div class="sub-item-sub">
+                <h4>电视：</h4>
+                <a href="">国产品牌</a><span>/</span>
+                <a href="">韩国品牌</a><span>/</span>
+                <a href="">欧美品牌</a>
+            </div>
+            <div class="sub-item-sub">
+                <h4>空调：</h4>
+                <a href="">柜式</a><span>/</span>
+                <a href="">中央</a><span>/</span>
+                <a href="">壁挂式</a>
+            </div>
+            <div class="sub-item-sub">
+                <h4>冰箱：</h4>
+                <a href="">多门</a><span>/</span>
+                <a href="">对开门</a><span>/</span>
+                <a href="">三门</a><span>/</span>
+                <a href="">双门</a>
+            </div>
+            <div class="sub-item-sub">
+                <h4>洗衣机：</h4>
+                <a href="">滚筒式洗衣机</a><span>/</span>
+                <a href="">迷你洗衣机</a><span>/</span>
+                <a href="">洗烘一体机</a>
+            </div>
+            <div class="sub-item-sub">
+                <h4>厨房电器：</h4>
+                <a href="">油烟机</a><span>/</span>
+                <a href="">洗碗机</a><span>/</span>
+                <a href="">燃气灶</a>
+            </div>
+        </div>
+        <div class="sub-item" style="display: none">
+            <h3>家具</h3>
+            <div class="sub-item-sub">
+                <h4>家纺：</h4>
+                <a href="">被子</a><span>/</span>
+                <a href="">枕头</a><span>/</span>
+                <a href="">四件套</a><span>/</span>
+                <a href="">床垫</a>
+            </div>
+            <div class="sub-item-sub">
+                <h4>灯具：</h4>
+                <a href="">台灯</a><span>/</span>
+                <a href="">顶灯</a><span>/</span>
+                <a href="">节能灯</a><span>/</span>
+                <a href="">应急灯</a>
+            </div>
+            <div class="sub-item-sub">
+                <h4>厨具：</h4>
+                <a href="">烹饪锅具</a><span>/</span>
+                <a href="">餐具</a><span>/</span>
+                <a href="">菜板刀具</a>
+            </div>
+            <div class="sub-item-sub">
+                <h4>家装：</h4>
+                <a href="">地毯</a><span>/</span>
+                <a href="">沙发垫套</a><span>/</span>
+                <a href="">装饰字画</a><span>/</span>
+                <a href="">照片墙</a><span>/</span>
+                <a href="">窗帘</a>
+            </div>
+            <div class="sub-item-sub">
+                <h4>生活日用：</h4>
+                <a href="">收纳用品</a><span>/</span>
+                <a href="">浴室用品</a><span>/</span>
+                <a href="">雨伞雨衣</a>
+            </div>
+        </div>
+    </nav>
+</div>
+</body>
+<script src="js/script.js"></script>
+</html>

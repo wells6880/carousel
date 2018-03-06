@@ -1,0 +1,142 @@
+/*基本样式*/
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%;
+}
+/*引入*/
+@font-face {
+    font-family: "iconfont";
+    src:url("../img/font/iconfont.eot");
+    src:url("../img/font/iconfont.eot") format("embedded-opentype"),
+        url("../img/font/iconfont.woff") format("woff"),
+        url("../img/font/iconfont.ttf") format("truetype"),
+        url("../img/font/iconfont.svg#iconfont") format("svg");
+}
+/*main样式*/
+.main{
+    width: 1200px;
+    height: 460px;
+    position: relative;
+    margin: 30px auto;
+}
+/*轮播图片样式*/
+.pics>.carousel-img{
+    position: absolute;
+    top:0;
+    left: 0;
+    display: none;
+}
+.pics>.active{
+    display: block;
+}
+/*上下张图片样式*/
+.carousel-arrow>img{
+    padding: 25px 12px;
+    position: absolute;
+    margin-top: -40px;
+    top: 50%;
+    cursor: pointer;
+}
+.carousel-arrow>img:hover{
+    background: #333;
+}
+.carousel-arrow>.carousel-arrow-left{
+    transform: rotate(180deg);
+    position: absolute;
+    left: 250px;
+}
+.carousel-arrow>.carousel-arrow-right{
+    position: absolute;
+    right:0;
+}
+/*图片导航样式*/
+.carousel-icon{
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.carousel-icon>span{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #333;
+    box-shadow: 0 0 0 2px #ccc;
+    float: left;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.carousel-icon>.active{
+    background: #fff;
+    box-shadow: 0 0 0 2px #999;
+}
+/*主导航样式*/
+.main>.nav-main{
+    width:250px;
+    height: 450px;
+    font-size: 16px;
+    background: rgba(150,150,150,0.5);
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: white;
+    padding-top: 10px;
+}
+.main>.nav-main>.main-item{
+    height: 70px;
+    line-height: 70px;
+    padding: 0 20px;
+}
+.main>.nav-main>.main-item>a{
+    display: block;
+    color: white;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding: 0 10px;
+}
+.main>.nav-main>.main-item:last-child>a{
+    border-bottom: none;
+}
+.main>.nav-main>.main-item>a>i{
+    float: right;
+    font-family: "iconfont";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 32px;
+}
+/*子导航样式*/
+.sub-item{
+    width: 732px;
+    height: 460px;
+    background: url("../img/fe.png") no-repeat;
+    position: absolute;
+    left: 250px;
+    top:0;
+    z-index: 1;
+    font-size: 16px;
+    padding:20px 40px;
+}
+.sub-item>h3{
+    color: red;
+    margin: 20px 0;
+}.sub-item>.sub-item-sub{
+    margin: 20px 0;
+ }
+.sub-item>.sub-item-sub>h4{
+    display: inline-block;
+    margin-right: 10px;
+}
+.sub-item>.sub-item-sub>a{
+    color: black;
+    font-weight: 300;
+}
+.sub-item>.sub-item-sub>span{
+    margin: 10px;
+}
